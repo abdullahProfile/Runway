@@ -20,5 +20,9 @@
     @media (max-width:1120px){
       @content;
     }
+  }@else if($size == "lg"){
+    @media (max-width:1400px){
+      @content;
+    }
   }
 }

@@ -47,6 +47,17 @@
   animation: moveArrow 0.6s infinite ease-in-out;
 }
 
+.saleBadge {
+  background: #121212;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
 .header {
   max-width: 1440px;
   margin-inline: auto;
@@ -388,4 +399,176 @@
     max-width: 100%;
     width: 100%;
   }
+}
+
+.newCollection__content {
+  max-width: 1440px;
+  margin-inline: auto;
+  font-family: "Inter", serif;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .newCollection__content {
+    padding-inline: 20px;
+  }
+}
+.newCollection__content__image {
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .newCollection__content__image {
+    display: none;
+  }
+}
+.newCollection__container {
+  max-width: 1240px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1400px) {
+  .newCollection__container {
+    left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .newCollection__container {
+    position: static;
+  }
+}
+.newCollection__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.newCollection__cta h3 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.newCollection__cta nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.newCollection__cta nav :first-child {
+  border-bottom: 2px solid currentColor;
+}
+.newCollection__cta nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.newCollection__cta nav a:hover {
+  border-bottom: 2px solid currentColor;
+}
+.newCollection__cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.newCollection__cards__Arrows {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  padding: 11px;
+  z-index: 1;
+  bottom: 190px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.newCollection__cards__Arrows:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1400px) {
+  .newCollection__cards__Arrows {
+    display: none;
+  }
+}
+.newCollection__cards .leftArrow {
+  left: -20px;
+}
+.newCollection__cards .RightArrow {
+  right: -20px;
+}
+.newCollection__cards .card {
+  max-width: 295px;
+  position: relative;
+}
+.newCollection__cards .card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  padding: 8px;
+  top: 16px;
+  left: 16px;
+  transition: all 0.3s ease-in;
+}
+.newCollection__cards .card__icon:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.newCollection__cards .card__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.newCollection__cards .card__content .card__content-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 20px 10px;
+}
+.newCollection__cards .card__content .card__content-text__txt h4, .newCollection__cards .card__content .card__content-text__txt p {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.newCollection__cards .card__content .card__content-text__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F3F3F3;
+  padding: 8px;
+  transition: all 0.3s ease-in;
+}
+.newCollection__cards .card__content .card__content-text__icon:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.newCollection__cards .card__colors {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.newCollection__cards .card__colors :first-child {
+  width: 20px;
+  height: 20px;
+  background-color: #412B32;
+  padding: 4px;
+  border: 1px solid currentColor;
+}
+.newCollection__cards .card__colors div {
+  width: 12px;
+  height: 12px;
+}
+.newCollection__cards .card__colors :nth-child(2) {
+  background-color: #B69474;
+}
+.newCollection__cards .card__colors :nth-child(3) {
+  background-color: #9C9A99;
+}
+.newCollection__cards .card__colors :last-child {
+  background-color: #E4D094;
 }
