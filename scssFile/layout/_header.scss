@@ -5,6 +5,7 @@
   top: 0;
   z-index: 100;
   font-family: $font-primary;
+  background-color: $text-secondary;
 
   &__announcement {
     background-color: #000;
@@ -16,6 +17,9 @@
       padding: 8px 20px;
     }
 
+    @include respond-to("phone") {
+      display: none;
+    }
     p {
       color: $text-secondary;
       font-size: $font-size-sm;
@@ -59,7 +63,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 100px;
-
+    position: relative;
     @include respond-to("desktop") {
       padding: 8px 20px;
     }
@@ -73,6 +77,7 @@
     font-size: 24px;
     color: $text-primary;
     top: 40px;
+    top: 2px;
     @include respond-to("desktop") {
       display: block;
     }
@@ -87,6 +92,7 @@
     font-size: 24px;
     color: $text-primary;
     display: none;
+    top: 2px;
   }
 
   &__nav {
@@ -105,7 +111,7 @@
         background-color: rgb(218, 218, 218);
         position: fixed;
         right: -100%;
-        top: 100px;
+        top: 39px;
         transition: all 0.3s ease-in-out;
         z-index: 100;
       }

@@ -1,0 +1,77 @@
+
+.hero-slider {
+
+  &__content {
+    max-width: 1440px;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+
+  &__slide{
+    position: relative;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+    position: absolute;
+    left: 100px;
+    bottom: 156px;
+    font-family: $font-primary;
+
+    @include respond-to("md-desktop"){
+      text-align: center;
+      bottom: 30px;
+
+    }
+
+    @include respond-to("phone"){
+      bottom: 20px;
+      left: 20px;
+    }
+
+    @include respond-to("xxsmall"){
+      bottom: 20px;
+      left: 5px;
+    }
+
+    h1 {
+      font-size: $font-size-xl;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.6;
+
+      @include respond-to("desktop"){
+        font-size: $font-size-md;
+      }
+
+      @include respond-to("phone"){
+        font-size: $font-size-md-sm;
+      }
+
+      @include respond-to("xxsmall"){
+       font-size: 12px;
+      }
+    }
+
+    p {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-block: 24px;
+
+      @include respond-to("phone"){
+        font-size: 16px;
+        margin: 0;
+        margin-block: 5px;
+      }
+
+      @include respond-to("xxsmall"){
+        font-size: 10px;
+       }
+    }
+  }
+}

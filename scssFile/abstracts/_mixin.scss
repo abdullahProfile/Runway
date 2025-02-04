@@ -3,12 +3,21 @@
     @media (max-width: 576px) {
       @content;
     }
-  } @else if $size == "tablet" {
+  }@else if($size == "xxsmall"){
+    @media (max-width:400px){
+      @content;
+    }
+  }
+   @else if $size == "tablet" {
     @media (max-width: 768px) {
       @content;
     }
   } @else if $size == "desktop" {
     @media (max-width: 920px) {
+      @content;
+    }
+  }@else if($size == "md-desktop"){
+    @media (max-width:1120px){
       @content;
     }
   }

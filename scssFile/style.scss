@@ -2,5 +2,10 @@
 @import 'abstracts/mixin';
 @import 'base/base';
 
+//component
+@import 'abstracts/animation';
+@import 'component/button';
+
 //layouts
 @import 'layout/header';
+@import 'layout/silder';
