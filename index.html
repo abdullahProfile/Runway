@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
   <title>Runway</title>
 </head>
@@ -32,6 +33,7 @@
       <a href="./index.html" class="header__logo"><img src="./assets/logo/logo.svg" alt="Company Logo"></a>
 
       <nav class="header__nav">
+        <input type="checkbox"  id="check">
         <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
           <li class="header__nav-item"><a href="#" class="header__nav-link">Shop <span><img src="./assets/icons/shopArrow.svg" alt="shop"></span></a></li>
@@ -39,6 +41,8 @@
           <li class="header__nav-item"><a href="#" class="header__nav-link">Size Chart</a></li>
           <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
         </ul>
+        <label for="check" class="header__close-menu"><li class="fas fa-times"></li></label>
+        <label for="check" class="header__open-menu"><li class="fas fa-bars"></li></label>
       </nav>
 
       <ul class="header__actions">

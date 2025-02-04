@@ -8,16 +8,21 @@
 .header {
   max-width: 1440px;
   margin-inline: auto;
-  font-family: font-primary;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
+  font-family: "Inter", serif;
 }
 .header__announcement {
   background-color: #000;
   display: flex;
   justify-content: space-between;
   padding: 8px 100px;
+}
+@media (max-width: 920px) {
+  .header__announcement {
+    padding: 8px 20px;
+  }
 }
 .header__announcement p {
   color: #fff;
@@ -34,6 +39,9 @@
   text-decoration: underline;
   font-weight: 600;
 }
+.header__announcement p span a:hover {
+  color: #808080;
+}
 .header__options {
   display: flex;
   align-items: center;
@@ -44,6 +52,8 @@
   border: none;
   color: #fff;
   cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .header__content {
   display: flex;
@@ -51,19 +61,98 @@
   justify-content: space-between;
   padding: 24px 100px;
 }
+@media (max-width: 920px) {
+  .header__content {
+    padding: 8px 20px;
+  }
+}
+.header__open-menu {
+  position: absolute;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  top: 40px;
+}
+@media (max-width: 920px) {
+  .header__open-menu {
+    display: block;
+  }
+}
+.header__close-menu {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  display: none;
+}
 .header__nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 32px;
 }
+@media (max-width: 920px) {
+  .header__nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(218, 218, 218);
+    position: fixed;
+    right: -100%;
+    top: 100px;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+  }
+}
 .header__nav ul li a {
   color: #000;
   text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.header__nav ul li a:hover {
+  color: "Inter", serif;
+  transform: scale(1.5);
 }
 .header__actions {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 16px;
+}
+@media (max-width: 920px) {
+  .header__actions {
+    display: none;
+  }
+}
+.header__actions li a img {
+  transition: all 0.3s ease-in;
+  font-size: 0;
+}
+.header__actions li a img:hover {
+  transform: scaleX(1.5);
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .header__nav-list {
+  right: 0;
+}
+
+#check:checked ~ .header__close-menu {
+  display: block;
+}
+
+#check:checked ~ .header__open-menu {
+  display: none;
 }
