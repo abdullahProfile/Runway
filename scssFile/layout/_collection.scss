@@ -1,0 +1,118 @@
+.collection {
+
+  &__content{
+    max-width: 1240px;
+    margin-inline: auto;
+    font-family: $font-primary;
+    margin-block: 100px;
+
+    @include respond-to("desktop"){
+      padding-inline: 20px;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    h2 {
+      font-size: $font-size-lg;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    @include respond-to("desktop"){
+      a {
+        margin: 0;
+      }
+
+      justify-content: center;
+    }
+  }
+
+  &__gallery {
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+
+    @include respond-to("desktop"){
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 0;
+    }
+    .grid-itemTwo {
+
+      grid-column: 3 / span 2;
+      grid-row: 1 / span 2;
+      align-self: end;
+    }
+
+    .grid-itemThree {
+      grid-column: 2 / span 1;
+      grid-row: 4;
+    }
+    .grid-itemFour {
+      grid-column: 3 / span 1;
+      grid-row: 4;
+    }
+
+    .grid-itemfive {
+      grid-column: 4 / span 1;
+      grid-row: 4;
+    }
+
+  }
+
+  &__gallery-one {
+    position: relative;
+    max-width: 610px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-decoration: none;
+      transform: translate(-50%, -50%);
+      border-radius: 100px;
+      background-color: #fff;
+      color: $text-primary;
+      padding: 10px 20px;
+      font-size: $font-size-md-sm;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all .3s ease-in;
+
+      &:hover {
+        background-color: #000;
+        color: $text-secondary;
+      }
+    }
+  }
+
+  &__image-secondary {
+    max-width: 295px;
+  }
+
+  @include respond-to("desktop"){
+    &__gallery-one ,
+    .grid-itemTwo,
+    .grid-itemThree,
+    .grid-itemFour,
+    .grid-itemfive {
+      grid-column: 1 / span 1;
+      grid-row: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  }

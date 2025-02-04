@@ -70,7 +70,7 @@
       }
 
       @include respond-to("xxsmall"){
-        font-size: 10px;
+        font-size: $font-size-xxs;
        }
     }
   }
