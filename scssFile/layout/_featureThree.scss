@@ -1,0 +1,14 @@
+.feature__v3{
+  
+  &-content {
+    max-width: 1240px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .feature__v1__cards {
+    flex-wrap: nowrap;
+  }
+}
