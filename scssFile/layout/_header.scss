@@ -167,6 +167,30 @@
       }
     }
   }
+
+  &__shop {
+    position: relative;
+
+    &:hover .header__dropdown {
+      display: flex !important;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    left: 0;
+    top: 40px;
+    background-color: aliceblue;
+    box-shadow: 4px 7px black;
+    z-index: 100;
+    a {
+      text-decoration: none;
+      font-size: $font-size-sm;
+    }
+  }
+
 }
 
 #check {

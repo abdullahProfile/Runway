@@ -217,6 +217,26 @@ body {
 .header__actions li a img:hover {
   transform: scaleX(1.5);
 }
+.header__shop {
+  position: relative;
+}
+.header__shop:hover .header__dropdown {
+  display: flex !important;
+}
+.header__dropdown {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  left: 0;
+  top: 40px;
+  background-color: aliceblue;
+  box-shadow: 4px 7px black;
+  z-index: 100;
+}
+.header__dropdown a {
+  text-decoration: none;
+  font-size: 14px;
+}
 
 #check {
   display: none;
