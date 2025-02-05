@@ -1,0 +1,50 @@
+.count__down {
+  &__content {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 80px 100px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 100px;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+
+    h6 {
+      font-size: $font-size-lg;
+      color: $text-secondary;
+      font-weight:  600;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      color: $text-secondary;
+    }
+  }
+
+  &__timer {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    div {
+      max-width: 94px;
+      background-color: $text-secondary;
+      padding: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      .count {
+        font-size: $font-size-lg;
+        font-weight: 600;
+      }
+
+      .text {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}
