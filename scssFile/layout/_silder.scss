@@ -21,7 +21,6 @@
     position: absolute;
     left: 100px;
     bottom: 156px;
-    font-family: $font-primary;
 
     @include respond-to("md-desktop"){
       text-align: center;

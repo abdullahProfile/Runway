@@ -3,7 +3,6 @@
   &__content{
     max-width: 1240px;
     margin-inline: auto;
-    font-family: $font-primary;
     margin-block: 100px;
 
     @include respond-to("desktop"){

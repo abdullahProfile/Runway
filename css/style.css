@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", serif;
+}
+
 @keyframes moveArrow {
   0% {
     transform: translateX(0);
@@ -64,7 +68,6 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  font-family: "Inter", serif;
   background-color: #fff;
 }
 .header__announcement {
@@ -164,7 +167,7 @@
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 100vh;
+    height: 42vh;
     background-color: rgb(218, 218, 218);
     position: fixed;
     right: -100%;
@@ -236,7 +239,6 @@
   position: absolute;
   left: 100px;
   bottom: 156px;
-  font-family: "Inter", serif;
 }
 @media (max-width: 1120px) {
   .hero-slider__text {
@@ -298,7 +300,6 @@
 .collection__content {
   max-width: 1240px;
   margin-inline: auto;
-  font-family: "Inter", serif;
   margin-block: 100px;
 }
 @media (max-width: 940px) {
@@ -404,7 +405,6 @@
 .newCollection__content {
   max-width: 1440px;
   margin-inline: auto;
-  font-family: "Inter", serif;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -552,23 +552,59 @@
   align-items: center;
   gap: 12px;
 }
-.newCollection__cards .card__colors :first-child {
-  width: 20px;
-  height: 20px;
-  background-color: #412B32;
-  padding: 4px;
-  border: 1px solid currentColor;
+.newCollection__cards .card__colors input {
+  display: none;
 }
-.newCollection__cards .card__colors div {
+.newCollection__cards .card__colors .color-box {
   width: 12px;
   height: 12px;
+  padding: 2px 10px;
+  cursor: pointer;
 }
-.newCollection__cards .card__colors :nth-child(2) {
+.newCollection__cards .card__colors .lightBlack {
+  background-color: #412B32;
+}
+.newCollection__cards .card__colors .Brown {
   background-color: #B69474;
 }
-.newCollection__cards .card__colors :nth-child(3) {
+.newCollection__cards .card__colors .gray {
   background-color: #9C9A99;
 }
-.newCollection__cards .card__colors :last-child {
+.newCollection__cards .card__colors .yellow {
   background-color: #E4D094;
+}
+.newCollection__cards .card__colors input:checked + .color-box {
+  outline: 1px solid black;
+  outline-offset: 5px;
+}
+.newCollection__swiper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  flex-wrap: wrap-reverse;
+}
+.newCollection__swiper-form {
+  display: flex;
+  gap: 8px;
+}
+.newCollection__swiper-form input {
+  display: none;
+}
+.newCollection__swiper-form .black {
+  width: 8px;
+  height: 8px;
+  padding: 2px 10px;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: pointer;
+}
+.newCollection__swiper-form input:checked + .black {
+  outline: 1px solid black;
+  outline-offset: 5px;
+}
+@media (max-width: 940px) {
+  .newCollection__swiper {
+    margin: 0;
+  }
 }
