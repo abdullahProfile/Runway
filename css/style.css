@@ -731,12 +731,13 @@ body {
   margin-block: 100px;
   flex-wrap: wrap;
 }
-.count__down__text h6 {
+.count__down__text h5 {
   font-size: 32px;
   color: #fff;
   font-weight: 600;
   line-height: 1.25;
   text-transform: uppercase;
+  color: #fff;
 }
 .count__down__text p {
   font-size: 14px;
@@ -748,7 +749,7 @@ body {
   flex-wrap: wrap;
 }
 .count__down__timer div {
-  max-width: 94px;
+  width: 94px;
   background-color: #fff;
   padding: 16px;
   text-align: center;

@@ -13,12 +13,13 @@
 
   &__text {
 
-    h6 {
+    h5 {
       font-size: $font-size-lg;
       color: $text-secondary;
       font-weight:  600;
       line-height: 1.25;
       text-transform: uppercase;
+      color: $text-secondary;
     }
 
     p {
@@ -31,12 +32,14 @@
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+
     div {
-      max-width: 94px;
+      width: 94px;
       background-color: $text-secondary;
       padding: 16px;
       text-align: center;
       text-transform: uppercase;
+
       .count {
         font-size: $font-size-lg;
         font-weight: 600;
