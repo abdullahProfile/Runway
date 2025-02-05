@@ -1,4 +1,4 @@
-.feature__v1 {
+.categories__v1 {
 
   &__content {
     max-width: 1440px;
@@ -103,7 +103,11 @@
     .card {
       max-width: 295px;
       position: relative;
-
+      transition: all .9s ease-in;
+      cursor: pointer;
+      &:hover {
+        transform: rotateY(180deg);
+      }
       @include respond-to("desktop"){
         max-width: 100%;
         width: 100%;

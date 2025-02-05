@@ -121,11 +121,23 @@
           text-decoration: none;
           font-size: $font-size-sm;
           display: inline-block;
-          transition: transform 0.3s ease, color 0.3s ease;
+          transition:all 0.3s ease-in;
+          position: relative;
+          &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            z-index: 1;
+            transition: all .3s ease-in;
+          }
 
-          &:hover {
-            color: $font-primary;
-            transform: scale(1.5);
+          &:hover::after {
+            width: 100%;
+            right: 0;
           }
         }
       }

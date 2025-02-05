@@ -1,4 +1,4 @@
-.features {
+.categories {
 
   &__content{
     max-width: 1240px;
@@ -16,6 +16,7 @@
     align-items: center;
     margin-bottom: 40px;
     flex-wrap: wrap;
+
     h2 {
       font-size: $font-size-lg;
       font-weight: 600;
@@ -26,8 +27,8 @@
       a {
         margin: 0;
       }
-
       justify-content: center;
+      gap: 25px;
     }
   }
 
@@ -44,7 +45,6 @@
       gap: 0;
     }
     .grid-itemTwo {
-
       grid-column: 3 / span 2;
       grid-row: 1 / span 2;
       align-self: end;
@@ -75,6 +75,11 @@
     img {
       width: 100%;
       object-fit: cover;
+      transition: all .6s ease-in;
+      cursor: pointer;
+      &:hover {
+        opacity: .5;
+      }
     }
     a {
       position: absolute;

@@ -1,0 +1,29 @@
+.features {
+
+  &__content {
+    max-width: 1440px;
+    background: #000;
+    padding: 64px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    max-width: 268px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 16px;
+    p {
+      color: $text-secondary;
+      text-transform: uppercase;
+      font-size: $font-size-md-sm;
+      font-weight: 500;
+      color: $text-secondary;
+      line-height: 1.5;
+    }
+  }
+}
