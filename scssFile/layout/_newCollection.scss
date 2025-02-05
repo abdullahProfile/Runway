@@ -103,10 +103,10 @@
     .card {
       max-width: 295px;
       position: relative;
-      transition: all .9s ease-in;
+      transition: all .5s ease-in;
       cursor: pointer;
       &:hover {
-        transform: rotateY(180deg);
+        transform: scale(1.1);
       }
       @include respond-to("desktop"){
         max-width: 100%;

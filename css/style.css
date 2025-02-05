@@ -515,11 +515,11 @@ body {
 .categories__v1__cards .card {
   max-width: 295px;
   position: relative;
-  transition: all 0.9s ease-in;
+  transition: all 0.5s ease-in;
   cursor: pointer;
 }
 .categories__v1__cards .card:hover {
-  transform: rotateY(180deg);
+  transform: scale(1.1);
 }
 @media (max-width: 940px) {
   .categories__v1__cards .card {
@@ -778,7 +778,7 @@ body {
 .features__text {
   margin-top: 16px;
 }
-.features__text p {
+.features__text h6 {
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
