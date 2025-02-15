@@ -1,0 +1,65 @@
+.collection {
+
+  &__content {
+    max-width: 1240px;
+    margin-inline: auto;
+    display: flex;
+    gap: 20px;
+    margin-block: 100px;
+
+    &-container {
+      max-width: 610px;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      &__text {
+        position: absolute;
+          right: 48px;
+          bottom: 126px;
+
+        h5 {
+          font-size: $font-size-lg;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+
+        .button {
+          margin-top: 24px;
+        }
+        @include respond-to("md-desktop") {
+          .button {
+            margin-inline:0;
+          }
+        }
+          @include respond-to("xxsmall") {
+            .button {
+              margin-top:0;
+            }
+        }
+
+        @include respond-to("phone") {
+          right: 15px;
+          bottom: 65px;
+         }
+
+         @include respond-to("xxsmall") {
+          bottom: 15px;
+          right: 0;
+         }
+      }
+    }
+
+    @include respond-to("md-desktop") {
+     padding-inline: 20px;
+    }
+
+    @include respond-to("desktop") {
+      flex-direction: column;
+      align-items: center;
+     }
+  }
+}
