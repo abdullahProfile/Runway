@@ -791,6 +791,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin-inline: auto;
 }
 .features__card {
   max-width: 268px;
