@@ -834,6 +834,7 @@ body {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 .collection__content-container__text .button {
   margin-top: 24px;
