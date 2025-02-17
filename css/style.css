@@ -1366,3 +1366,68 @@ body {
   justify-content: center;
   margin-inline: auto;
 }
+
+.newsLeter__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background: #121212;
+  padding-block: 100px;
+}
+@media (max-width: 768px) {
+  .newsLeter__container {
+    text-align: center;
+    padding-inline: 20px;
+  }
+}
+.newsLeter__container-text {
+  color: #fff;
+}
+.newsLeter__container-text h5 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.newsLeter__container-text p {
+  font-weight: 400;
+}
+.newsLeter__container-form {
+  position: relative;
+  display: inline-block;
+  width: 536px;
+}
+@media (max-width: 768px) {
+  .newsLeter__container-form {
+    width: auto;
+  }
+}
+.newsLeter__container-form input {
+  outline: none;
+  border: none;
+  padding-bottom: 16px;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  width: 100%;
+}
+.newsLeter__container-form input::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.newsLeter__container-form input:focus, .newsLeter__container-form input:active {
+  background-color: transparent;
+}
+.newsLeter__container-form button {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
