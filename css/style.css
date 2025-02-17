@@ -1111,3 +1111,155 @@ body {
   font-weight: 600;
   font-size: 14px;
 }
+
+.social-feed__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: #000;
+  padding-block: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+@media (max-width: 768px) {
+  .social-feed__container {
+    padding: 0;
+    padding: 50px 20px;
+  }
+}
+.social-feed__title {
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+.social-feed .instagram-grid {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+@media (max-width: 1180px) {
+  .social-feed .instagram-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.social-feed .instagram-grid .instagram-post {
+  max-width: 290px;
+  padding: 20px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-feed .instagram-grid .instagram-post__primary {
+  margin-left: -40px;
+}
+@media (max-width: 940px) {
+  .social-feed .instagram-grid .instagram-post__primary {
+    margin-left: 0;
+  }
+}
+.social-feed .instagram-grid .instagram-post__secondary {
+  margin-right: -23px;
+}
+@media (max-width: 940px) {
+  .social-feed .instagram-grid .instagram-post__secondary {
+    margin-right: 0;
+  }
+}
+.social-feed .instagram-grid .instagram-post__med {
+  padding-block: 40px;
+}
+.social-feed .instagram-grid .instagram-post .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+}
+.social-feed .instagram-grid .instagram-post .post-header .post-author {
+  display: flex;
+  gap: 10px;
+}
+.social-feed .instagram-grid .instagram-post .post-header .post-author .author-avatar {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 14px 10px;
+  text-align: center;
+  background-color: #000;
+}
+.social-feed .instagram-grid .instagram-post .post-header .post-author .author-avatar img {
+  width: 100%;
+  object-fit: cover;
+}
+.social-feed .instagram-grid .instagram-post .post-header .post-author .author-info .author-name {
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.social-feed .instagram-grid .instagram-post .post-header .post-author .author-info .author-name span {
+  color: #435269;
+  font-size: 10px;
+  font-weight: 500;
+}
+.social-feed .instagram-grid .instagram-post .post-header .post-author .author-info-handle {
+  font-size: 12px;
+  font-weight: 500;
+}
+.social-feed .instagram-grid .instagram-post .post-header .post-options {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+.social-feed .instagram-grid .instagram-post .post-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 226px;
+}
+.social-feed .instagram-grid .instagram-post .post-body p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.social-feed .instagram-grid .instagram-post .post-footer .post-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.social-feed .instagram-grid .instagram-post .post-footer .post-actions .action-button {
+  background: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.social-feed .instagram-grid .instagram-post .post-footer .post-actions .action-button .action-count {
+  font-size: 12px;
+  font-weight: 500;
+}
+.social-feed .instagram-grid .instagram-post .post-footer .post-actions .action-button .action-count__secondary {
+  display: inline-block;
+  width: 8ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.social-feed .instagram-grid .instagram-post .post-footer .post-actions .action-button .action-count__shares {
+  display: inline-block;
+  width: 6ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.social-feed .button {
+  background-color: #fff;
+  color: #000;
+  justify-content: center;
+}
