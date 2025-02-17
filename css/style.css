@@ -1272,9 +1272,22 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .testimonial__container {
+    padding-inline: 20px;
+  }
+}
 .testimonial__container-header {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .testimonial__container-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 .testimonial__container-header h4 {
   font-size: 32px;
@@ -1299,6 +1312,13 @@ body {
   display: flex;
   align-items: self-start;
   gap: 20px;
+}
+@media (max-width: 1120px) {
+  .testimonial__container-body {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .testimonial__container-card {
   overflow: hidden;
