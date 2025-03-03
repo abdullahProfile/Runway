@@ -2,6 +2,7 @@ footer {
   max-width: 1440px;
   margin-inline: auto;
   background: #000;
+  overflow: hidden;
 
   nav {
     max-width: 1240px;
@@ -49,6 +50,9 @@ footer {
     align-items: center;
     gap: 16px;
 
+    @include respond-to("tablet"){
+      flex-direction: column;
+    }
     p {
       text-transform: uppercase;
       color: $text-secondary;
@@ -60,6 +64,38 @@ footer {
       display: flex;
       gap: 24px;
       align-items: center;
+
+      @include respond-to("tablet"){
+        flex-direction: column;
+      }
+    }
+  }
+
+  .footer-text {
+    font-size: 245px;
+    font-weight: 600;
+    color: $text-secondary;
+    position: relative;
+    max-width: 1240px;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: -143px;
+    text-transform: uppercase;
+
+    @include respond-to("desktop") {
+      display: none;
+    }
+
+    span {
+      position: absolute;
+      top: 53px;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      border: 10px solid #fff;
+      color: #fff;
+      font-size: 39px;
+      text-align: center;
     }
   }
 }
