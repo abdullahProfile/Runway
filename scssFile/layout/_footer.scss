@@ -1,0 +1,65 @@
+footer {
+  max-width: 1440px;
+  margin-inline: auto;
+  background: #000;
+
+  nav {
+    max-width: 1240px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 100px;
+
+    @include respond-to("tablet"){
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      padding-block: 40px;
+      padding-inline: 20px;
+    }
+    ul {
+
+      li {
+        color: $text-secondary;
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 16px;
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: $text-secondary;
+        }
+      }
+
+      .footer-cta {
+        display: flex;
+        gap: 12px;
+      }
+    }
+  }
+
+  .footer-icons {
+    max-width: 1240px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    p {
+      text-transform: uppercase;
+      color: $text-secondary;
+      font-size: $font-size-sm;
+      font-weight: 600;
+    }
+
+    div {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+  }
+}
