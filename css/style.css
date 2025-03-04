@@ -1531,3 +1531,28 @@ footer .footer-text span {
   font-size: 39px;
   text-align: center;
 }
+
+.shop-categories__content {
+  max-width: 1240px;
+  margin-inline: auto;
+  margin-block: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (max-width: 768px) {
+  .shop-categories__content {
+    padding-inline: 20px;
+    align-items: center;
+  }
+  .shop-categories__content .categories__v1__swiper {
+    gap: 20px;
+  }
+}
+.shop-categories__content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
