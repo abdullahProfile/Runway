@@ -29,13 +29,13 @@
     </div>
 
     <div class="header__content">
-      <a href="./index.html" class="header__logo"><img src="./assets/logo/logo.svg" alt="Company Logo"></a>
+      <a href="./index.html" class="header__logo"><img src="../assets/logo/logo.svg" alt="Company Logo"></a>
 
       <nav class="header__nav">
         <input type="checkbox"  id="check">
         <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link header__shop">Shop <span><img src="./assets/icons/shopArrow.svg" alt="shop"></span></a>
+          <li class="header__nav-item"><a href="#" class="header__nav-link header__shop">Shop <span><img src="../assets/icons/shopArrow.svg" alt="shop"></span></a>
             <div class="header__dropdown">
               <a href="#">Shorts</a>
               <a href="#">Shorts</a>
@@ -54,28 +54,145 @@
       <ul class="header__actions">
         <li class="header__action-item">
           <a href="#" class="header__action-link">
-            <img src="./assets/icons/heart.svg" alt="Wishlist">
+            <img src="../assets/icons/heart.svg" alt="Wishlist">
           </a>
         </li>
         <li class="header__action-item">
           <a href="#" class="header__action-link">
-            <img src="./assets/icons/user-alt.svg" alt="User Profile">
+            <img src="../assets/icons/user-alt.svg" alt="User Profile">
           </a>
         </li>
         <li class="header__action-item">
           <a href="#" class="header__action-link">
-            <img src="./assets/icons/search.svg" alt="Search">
+            <img src="../assets/icons/search.svg" alt="Search">
           </a>
         </li>
         <li class="header__action-item">
           <a href="#" class="header__action-link">
-            <img src="./assets/icons/shopping-bag.svg" alt="Cart">
+            <img src="../assets/icons/shopping-bag.svg" alt="Cart">
           </a>
         </li>
       </ul>
     </div>
   </header>
 
+  <main>
+    <section class="product">
+      <div class="product__content">
+        <div class="product__content-container">
+
+          <div class="product__content-container__gallery">
+            <div class="product__content-container__gallery-btns">
+              <button><img src="../assets/images/product/productThree.svg" alt="image"></button>
+              <button><img src="../assets/images/product/productTwo.svg" alt="image"></button>
+              <button><img src="../assets/images/product/productFour.svg" alt="image"></button>
+              <button><img src="../assets/images/product/productFive.svg" alt="image"></button>
+            </div>
+            <img src="../assets/images/product/hero.svg" alt="image">
+          </div>
+
+          <div class="product__content-container__text">
+
+            <div class="product__content-rating">
+
+              <div>
+                <h5>home tee - oversized</h5>
+                <h5>$49.00</h5>
+
+                <span class="product__content-ratingStars">
+                  <span>
+                    <button><img src="../assets/images/product/ratingOne.svg" alt="image"></button>
+                    <button><img src="../assets/images/product/ratingOne.svg" alt="image"></button>
+                    <button><img src="../assets/images/product/ratingOne.svg" alt="image"></button>
+                    <button><img src="../assets/images/product/ratingOne.svg" alt="image"></button>
+                    <button><img src="../assets/images/product/ratingFive.svg" alt="image"></button>
+                  </span>
+
+                  <span>(104)</span>
+                </span>
+              </div>
+
+
+              <span class="product__content-icon">
+                <a href="#"><img src="../assets/icons/heart.svg" alt="icon"></a>
+              </span>
+            </div>
+
+            <p>Halter o'nine just down privateer chains cutlass pillage. Belaying across overhaul davy chains shot starboard. Nest execution deck crack coast smartly.</p>
+
+            <form action="#" class="product__content-colorSelector">
+              <label>
+                  <input type="radio" name="color" value="red" checked>
+                  <span class="color-box red"></span>
+              </label>
+              <label>
+                  <input type="radio" name="color" value="Brown">
+                  <span class="color-box Brown"></span>
+              </label>
+              <label>
+                  <input type="radio" name="color" value="black" checked>
+                  <span class="color-box black"></span>
+              </label>
+            </form>
+
+            <div class="product__content-size">
+              <div class="product__content-size__text">
+                <p>size: <span>xl</span></p>
+                <a href="#">view size chart</a>
+              </div>
+
+              <div class="product__content-size__btns">
+                <button>S</button>
+                <button>M</button>
+                <button>XL</button>
+                <button>XXL</button>
+              </div>
+            </div>
+
+            <div class="product__content__quantity">
+              <p>quantity: 1</p>
+
+              <div class="product__content__quantity-info">
+                <div>
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+
+                <button class="button">Add To cart</button>
+              </div>
+            </div>
+
+            <button class="button">buy with<a href="#"><img src="../assets/images/product/payment.svg" alt="image"></a></button>
+
+            <div class="product__content__payament">
+              <h5>other options</h5>
+
+              <a href="#"><img src="../assets/images/product/paymentOne.svg" alt="image"></a>
+              <a href="#"><img src="../assets/images/product/paymentTwo.svg" alt="image"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsLeter">
+      <div class="newsLeter__container">
+        <div class="newsLeter__container-text">
+          <h5>join the oversized club</h5>
+          <p>Subscribe to our newsletter to stay upto date with all the latest offers, deals and discounts</p>
+        </div>
+
+        <form action="submit" class="newsLeter__container-form">
+          <input type="email" placeholder="enter your email">
+
+          <button class="input-arrow">
+            <img src="../assets/icons/inputArrow.svg" alt="arrow">
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
   <footer>
     <nav>
       <ul>
@@ -113,10 +230,10 @@
 
       <ul>
         <li>follow us</li>
-        <li><a href="#" class="footer-cta"><img src="./assets/icons/snap.svg" alt="logo"><span>@logo</span></a></li>
-        <li><a href="#" class="footer-cta"><img src="./assets/icons/instagram.svg" alt="logo"><span>@logo</span></a></li>
-        <li><a href="#" class="footer-cta"><img src="./assets/icons/facebook.svg" alt="logo"><span>@logo</span></a></li>
-        <li><a href="#" class="footer-cta"><img src="./assets/icons/linkdln.svg" alt="logo"><span>@logo</span></a></li>
+        <li><a href="#" class="footer-cta"><img src="../assets/icons/snap.svg" alt="logo"><span>@logo</span></a></li>
+        <li><a href="#" class="footer-cta"><img src="../assets/icons/instagram.svg" alt="logo"><span>@logo</span></a></li>
+        <li><a href="#" class="footer-cta"><img src="../assets/icons/facebook.svg" alt="logo"><span>@logo</span></a></li>
+        <li><a href="#" class="footer-cta"><img src="../assets/icons/linkdln.svg" alt="logo"><span>@logo</span></a></li>
       </ul>
     </nav>
 
@@ -126,9 +243,9 @@
       <div>
         <p>payment options</p>
 
-        <a href="#"><img src="./assets/icons/shopPay.svg" alt="logo"></a>
-        <a href="#"><img src="./assets/icons/googlePay.svg" alt="logo"></a>
-        <a href="#"><img src="./assets/icons/PayPal.svg" alt="logo"></a>
+        <a href="#"><img src="../assets/icons/shopPay.svg" alt="logo"></a>
+        <a href="#"><img src="../assets/icons/googlePay.svg" alt="logo"></a>
+        <a href="#"><img src="../assets/icons/PayPal.svg" alt="logo"></a>
       </div>
     </div>
 
