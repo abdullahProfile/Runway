@@ -1,0 +1,62 @@
+.oversized {
+  
+  &__container {
+    max-width: 1240px;
+    margin-inline: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+
+    @include respond-to("md-desktop") {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-inline: 20px;
+    }
+  }
+
+  &__content {
+    max-width: 643px;
+
+    @include respond-to("md-desktop") {
+     text-align: center;
+    }
+
+    h5 {
+      font-size: $font-size-lg;
+      font-weight: 600;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-weight: 400;
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__image {
+    max-width: 448px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__secondaryImage {
+    position: absolute;
+    right: 254px;
+    bottom: -52px;
+
+    @include respond-to("md-desktop") {
+      right: 50px;
+    }
+
+    @include respond-to("tablet") {
+      display: none;
+    }
+  }
+}

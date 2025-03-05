@@ -33,7 +33,7 @@
     width: 536px;
 
     @include respond-to("tablet"){
-      width: auto;
+      width: 100%;
     }
 
     input {

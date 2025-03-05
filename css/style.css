@@ -1406,7 +1406,7 @@ body {
 }
 @media (max-width: 768px) {
   .newsLeter__container-form {
-    width: auto;
+    width: 100%;
   }
 }
 .newsLeter__container-form input {
@@ -1555,4 +1555,63 @@ footer .footer-text span {
   text-align: center;
   text-transform: uppercase;
   line-height: 1.5;
+}
+
+.oversized__container {
+  max-width: 1240px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+@media (max-width: 1120px) {
+  .oversized__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-inline: 20px;
+  }
+}
+.oversized__content {
+  max-width: 643px;
+}
+@media (max-width: 1120px) {
+  .oversized__content {
+    text-align: center;
+  }
+}
+.oversized__content h5 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.oversized__content p {
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.oversized__image {
+  max-width: 448px;
+  overflow: hidden;
+}
+.oversized__image img {
+  width: 100%;
+}
+.oversized__secondaryImage {
+  position: absolute;
+  right: 254px;
+  bottom: -52px;
+}
+@media (max-width: 1120px) {
+  .oversized__secondaryImage {
+    right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .oversized__secondaryImage {
+    display: none;
+  }
 }
