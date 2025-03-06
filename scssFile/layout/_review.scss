@@ -1,0 +1,103 @@
+.review {
+
+  &__content {
+    max-width: 1240px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    h5 {
+      font-size: $font-size-md;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    gap: 16px;
+
+    button {
+      border: 1px solid currentColor;
+      text-transform: uppercase;
+      border-radius: 40px;
+      text-align: center;
+      font-size: $font-size-md-sm;
+      font-weight: 600;
+      padding: 10px 20px;
+      background: transparent;
+    }
+
+    .button {
+      max-width: 100%;
+    }
+  }
+
+  &__sideBar {
+    max-width: 354px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      p:nth-child(1) {
+        font-size: $font-size-md;
+      }
+
+      span {
+        display: flex;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+    }
+
+    .span{
+      width: 244px;
+      height: 4px;
+      background: #000;
+      border-radius: 100px;
+      padding: 2px;
+    }
+
+    .spanTwo {
+        display: inline-block;
+        background: linear-gradient(to right, #000 187px, #f3f3f3 0);
+    }
+
+    .spanThree {
+      background: linear-gradient(to right, #000 128px, #f3f3f3 0);
+    }
+
+    .spanfour {
+      background: linear-gradient(to right, #000 59px, #f3f3f3 0);
+    }
+
+    .spanfive {
+      background: linear-gradient(to right, #000 22px, #f3f3f3 0);
+    }
+  }
+}

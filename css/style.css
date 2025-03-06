@@ -1626,3 +1626,87 @@ footer .footer-text span {
     display: none;
   }
 }
+
+.review__content {
+  max-width: 1240px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.review__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.review__header h5 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.review__cta {
+  display: flex;
+  gap: 16px;
+}
+.review__cta button {
+  border: 1px solid currentColor;
+  text-transform: uppercase;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background: transparent;
+}
+.review__cta .button {
+  max-width: 100%;
+}
+.review__sideBar {
+  max-width: 354px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.review__sideBar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.review__sideBar-header p {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.review__sideBar-header p:nth-child(1) {
+  font-size: 24px;
+}
+.review__sideBar-header span {
+  display: flex;
+}
+.review__rating {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.review__rating p {
+  font-weight: 400;
+}
+.review__rating .span {
+  width: 244px;
+  height: 4px;
+  background: #000;
+  border-radius: 100px;
+  padding: 2px;
+}
+.review__rating .spanTwo {
+  display: inline-block;
+  background: linear-gradient(to right, #000 187px, #f3f3f3 0);
+}
+.review__rating .spanThree {
+  background: linear-gradient(to right, #000 128px, #f3f3f3 0);
+}
+.review__rating .spanfour {
+  background: linear-gradient(to right, #000 59px, #f3f3f3 0);
+}
+.review__rating .spanfive {
+  background: linear-gradient(to right, #000 22px, #f3f3f3 0);
+}
