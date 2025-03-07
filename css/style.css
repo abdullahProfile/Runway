@@ -186,6 +186,11 @@ body {
     z-index: 100;
   }
 }
+@media (max-width: 768px) {
+  .header__nav ul {
+    top: 30px;
+  }
+}
 .header__nav ul li a {
   color: #000;
   text-decoration: none;
@@ -920,6 +925,11 @@ body {
   width: 100%;
   display: flex;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .product__content-container__gallery {
+    max-width: 100%;
+  }
 }
 .product__content-container__gallery-btns {
   max-width: 106px;

@@ -37,6 +37,10 @@
         display: flex;
         gap: 20px;
 
+        @include respond-to("tablet") {
+          max-width: 100%;
+        }
+
         &-btns {
           max-width: 106px;
           display: flex;
