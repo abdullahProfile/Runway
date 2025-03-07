@@ -1810,3 +1810,47 @@ footer .footer-text span {
   display: flex;
   align-items: center;
 }
+
+.categories__collection-content {
+  max-width: 1240px;
+  margin-inline: auto;
+  margin-top: 48px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.categories__collection-content h5 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.categories__collection-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.categories__collection-image {
+  max-width: 610px;
+  position: relative;
+}
+.categories__collection-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.categories__collection-image a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3sease-in;
+}
