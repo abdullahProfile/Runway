@@ -6,12 +6,22 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include respond-to("lg") {
+     padding-inline: 20px;
+    }
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @include respond-to("phone"){
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
     h5 {
       font-size: $font-size-md;
@@ -23,6 +33,12 @@
   &__cta {
     display: flex;
     gap: 16px;
+
+    @include respond-to("phone"){
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
     button {
       border: 1px solid currentColor;
@@ -40,11 +56,25 @@
     }
   }
 
+  &__body {
+    display: flex;
+    gap: 20px;
+
+    @include respond-to("lg") {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
   &__sideBar {
     max-width: 354px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @include respond-to("phone") {
+      display: none;
+    }
 
     &-header {
       display: flex;
@@ -99,5 +129,69 @@
     .spanfive {
       background: linear-gradient(to right, #000 22px, #f3f3f3 0);
     }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    padding-block: 48px;
+    max-width: 822px;
+
+    p {
+      font-weight: 400;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      @include respond-to("tablet") {
+        flex-wrap: wrap;
+       }
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &-images {
+      display: flex;
+      gap: 5px;
+    }
+
+    &-image {
+      max-width: 80px;
+      img {
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+      }
+    }
+
+    &-text {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &__verified {
+    display: flex;
+    border-radius: 24px;
+    border: 1px solid currentColor;
+    color: #000;
+    padding-inline: 6px;
+    gap: 5px;
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
   }
 }
