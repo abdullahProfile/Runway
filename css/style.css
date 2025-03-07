@@ -50,6 +50,10 @@ body {
     margin-inline: auto;
   }
 }
+.button:hover {
+  background-color: #dcdcdc;
+  color: #000;
+}
 .button span {
   margin-left: 12px;
 }
@@ -1853,4 +1857,8 @@ footer .footer-text span {
   text-transform: uppercase;
   font-weight: 600;
   transition: all 0.3sease-in;
+}
+.categories__collection-image a:hover {
+  background-color: #000;
+  color: #fff;
 }

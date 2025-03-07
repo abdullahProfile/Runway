@@ -16,6 +16,11 @@
   @include respond-to("md-desktop"){
    margin-inline: auto;
   }
+
+  &:hover {
+    background-color: #dcdcdc;
+    color: #000;
+  }
   span {
     margin-left: 12px;
     img {
