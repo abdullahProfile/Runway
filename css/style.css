@@ -79,6 +79,9 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
+#backBtn:hover {
+  background: #000;
+}
 
 .saleBadge {
   background: #121212;
